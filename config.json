@@ -1,0 +1,47 @@
+{
+    "Nombre": "Miguel Angel Castro",
+    "Logo": "./img/logo.svg",
+    "Menus":[
+        {
+            "Nombre":"Github",
+            "Url": "https://github.com/ComfenalcoCursos2021?tab=repositories",
+            "Mensaje": "Visitar..."
+        },
+        {
+            "Nombre":"Diplomado",
+            "Url": "#exampleModalToggle",
+            "Mensaje": ""
+        }
+    ],
+    "VentanaMenus":{
+        "Titulo":"Diplomados y Cursos de comfenalco"
+    },
+    "Presentaciones":[
+        {
+            "Titulo": "UNC -Fundación Universitaria Comfenalco Santander",
+            "Contenido": "Avenida González Valencia N 52-69 piso 1, Bucaramanga, Santander",
+            "Img": "./img/imgCaruselMovil1.jpg",
+            "Iniciar": "active"
+        },
+        {
+            "Titulo": "",
+            "Contenido": "",
+            "Img": "./img/imgCaruselMovil2.png",
+            "Iniciar": ""
+        },
+        {
+            "Titulo": "",
+            "Contenido": "",
+            "Img": "./img/imgCaruselMovil3.jpg",
+            "Iniciar": ""
+        }
+    ],
+    "Formulario":{
+        "Titulo": "Formulario",
+        "Descripcion": "lorem D",
+        "Contenido":"Lorem C",
+        "Boton":"Mostrar Formulario",
+        "Mensaje": "0"
+    }
+    
+}
