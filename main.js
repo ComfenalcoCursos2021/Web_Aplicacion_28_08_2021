@@ -2,7 +2,7 @@ const Header = (data)=>{
     return new Promise((resolve)=>{
         resolve(`
         <a  class="navbar-brand" href="#">
-            <img src="${data.Logo}" alt="" width="30" height="24" class="d-inline-block align-text-top">
+            <img src="${data.Logo}" alt="" width="30" class="d-inline-block align-text-top">
                 ${data.Nombre}
         </a>`);
     })
@@ -55,7 +55,7 @@ const Formulario = (data)=>{
         <h5 class="card-title">${value.Descripcion}</h5>
             <p class="card-text">${value.Contenido}</p>
             <a class="btn btn-primary position-relative rounded-0" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">${value.Boton}
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-0 bg-danger">
+                <span id="mensajeTotal" class="position-absolute top-0 start-100 translate-middle badge rounded-0 bg-danger">
                 ${value.Mensaje}
                     <span class="visually-hidden"></span>
              </a>`;
@@ -70,7 +70,6 @@ const VentanaMenus = (data)=>{
     })
 }
 self.addEventListener("message", async(e)=>{
-    console.count();
     let fichero = await fetch(e.data.url);
     let data = await fichero.json();
     let [header, menus, presentaciones,formulario,ventanaMenus] = await Promise.all([
@@ -80,7 +79,5 @@ self.addEventListener("message", async(e)=>{
         Formulario(data),
         VentanaMenus(data)
     ]);
-    
     postMessage({header, menus,presentaciones,formulario,ventanaMenus});
-   
 })
