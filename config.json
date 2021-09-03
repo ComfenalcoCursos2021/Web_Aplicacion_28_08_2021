@@ -38,8 +38,8 @@
     ],
     "Formulario":{
         "Titulo": "Formulario",
-        "Descripcion": "lorem D",
-        "Contenido":"Lorem C",
+        "Descripcion": "Los datos insertados en el formulario estara almacenamos en la base de datos IndexedDB ",
+        "Contenido":"Dar click en el boton para habilitar el formulario de insercion de datos",
         "Boton":"Mostrar Formulario",
         "Mensaje": "<div class='spinner-grow spinner-grow-sm text-light' role='status'> <span class='visually-hidden'>Loading...</span></div>"
     }
